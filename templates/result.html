@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cluster Summary</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Cluster-wise Summary</h2>
+    {% for table in tables %}
+        {{ table | safe }}
+    {% endfor %}
+    <a href="/"><button>Back</button></a>
+</body>
+</html>
